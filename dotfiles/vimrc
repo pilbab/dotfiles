@@ -1,0 +1,98 @@
+set nocompatible
+"filetype off
+
+let mapleader = "\<Space>"
+let maplocalleader = ","
+
+set guifont=Fantasque\ Sans\ Mono\ 14
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'itchyny/lightline.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'Hublot/vim-gromacs'
+Plugin 'godlygeek/tabular'
+Plugin 'ervandew/supertab'
+Plugin 'vim-python/python-syntax'
+Plugin 'lervag/vimtex'
+Plugin 'kaicataldo/material.vim'
+call vundle#end()
+filetype plugin indent on
+syntax on
+
+"lightline configuration
+let g:lightline = {
+            \ 'colorscheme': 'material',
+            \ }
+
+"colorscheme
+set background=dark
+set termguicolors
+let g:material_terminal_italics = 1
+colorscheme material
+
+
+
+set showmatch
+
+set nu
+set rnu
+set incsearch
+set hls
+set lbr
+set ruler
+set noshowmode
+set showcmd
+set expandtab
+set laststatus=2
+"set wildmenu
+set colorcolumn=79
+set cursorline
+set nobackup
+set noswapfile
+set nowritebackup
+set scrolloff=3
+
+" PEP8 indentation
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=79
+set expandtab
+"Plugin 'dracula/vim'
+set autoindent
+set fileformat=unix
+set title
+set ttyfast
+"
+"
+"" Flagging unnecessary whitespace
+highlight BadWhitespace ctermbg=red guibg=red
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+"
+"split navigations
+nnoremap <C-J> <C-W> <C-J>
+nnoremap <C-K> <C-W> <C-K>
+nnoremap <C-L> <C-W> <C-L>
+nnoremap <C-H> <C-W> <C-H>
+
+" Enable folding
+"set foldmethod=indent
+"set foldlevel=99
+
+" Enable folding with the spacebar
+"nnoremap <space> za
+
+" Snakemake syntax highlighting
+au BufNewFile,BufRead Snakefile set syntax=snakemake
+au BufNewFile,BufRead *.snake set syntax=snakemake
+
+" Python Highlight
+"let g:python_highlight_all = 1
+
+"let g:colorizer_auto_color = 1
+
+" vimtex
+
+
