@@ -19,6 +19,10 @@ alias sus='i3lock && systemctl suspend'
 alias alchem_ana='python2.7 /backup/scratch_ssd/home/roetzscher/programs/alchemical-analysis/alchemical_analysis/alchemical_analysis.py'
 alias sm='snakemake'
 alias dotdrop='/home/roetzscher/.dotfiles/dotdrop.sh --cfg=/home/roetzscher/.dotfiles/config.yaml'
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
 source /opt/gromacs-2019/bin/GMXRC
 source ~/programs/plumed2/sourceme.sh
 #set libdir "/home/roetzscher/opt/lib"
@@ -26,7 +30,7 @@ source ~/programs/plumed2/sourceme.sh
 #set includedir "/home/roetzscher/opt/include"
 #set progname "plumed"
 #PLUMED_KERNEL=/home/roetzscher/opt/lib/libplumedKernel.so
-alias cwl='cwl-runner'
+#alias cwl='cwl-runner'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
