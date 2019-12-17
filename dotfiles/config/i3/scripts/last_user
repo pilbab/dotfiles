@@ -1,0 +1,3 @@
+#!/bin/bash
+
+last -s today | awk 'NR==1{print}'

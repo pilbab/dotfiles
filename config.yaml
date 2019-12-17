@@ -6,7 +6,35 @@ dotfiles:
   f_vimrc:
     src: vimrc
     dst: ~/.vimrc
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  d_i3:
+    src: config/i3
+    dst: ~/.config/i3
+  d_termite:
+    src: config/termite
+    dst: ~/.config/termite
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+  f_zimrc:
+    src: zimrc
+    dst: ~/.zimrc
+  d_zim:
+    src: zim
+    dst: ~/.zim
+  d_vim:
+    src: vim
+    dst: ~/.vim
 profiles:
   bioinfo2:
     dotfiles:
     - f_vimrc
+    - d_rofi
+    - d_i3
+    - d_termite
+    - f_zshrc
+    - f_zimrc
+    - d_zim
+    - d_vim

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+utt report | grep Working | awk '{print $3}'

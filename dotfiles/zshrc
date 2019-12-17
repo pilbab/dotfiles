@@ -1,0 +1,45 @@
+#
+# User configuration sourced by interactive shells
+#
+# Source zim
+if [[ -s ${ZDOTDIR:-${HOME}}/.zim/init.zsh ]]; then
+  source ${ZDOTDIR:-${HOME}}/.zim/init.zsh
+fi
+
+# Change default zim location
+# Start zim
+setxkbmap -layout us,de -option grp:menu_toggle -option caps:swapescape
+source $HOME/.aliases
+source /usr/share/vim/vimfiles/gruvbox_256palette.sh
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export PATH=$PATH:/opt/pymol
+alias lclust='ssh -X er76ujig@lcluster8.hrz.tu-darmstadt.de'
+alias sus='i3lock && systemctl suspend'
+alias alchem_ana='python2.7 /backup/scratch_ssd/home/roetzscher/programs/alchemical-analysis/alchemical_analysis/alchemical_analysis.py'
+alias sm='snakemake'
+alias dotdrop='/home/roetzscher/.dotfiles/dotdrop.sh --cfg=/home/roetzscher/.dotfiles/config.yaml'
+source /opt/gromacs-2019/bin/GMXRC
+source ~/programs/plumed2/sourceme.sh
+#set libdir "/home/roetzscher/opt/lib"
+#set bindir "/home/roetzscher/opt/bin"
+#set includedir "/home/roetzscher/opt/include"
+#set progname "plumed"
+#PLUMED_KERNEL=/home/roetzscher/opt/lib/libplumedKernel.so
+alias cwl='cwl-runner'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/roetzscher/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/roetzscher/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/roetzscher/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/roetzscher/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
