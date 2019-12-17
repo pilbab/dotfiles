@@ -21,9 +21,6 @@ dotfiles:
   f_zimrc:
     src: zimrc
     dst: ~/.zimrc
-  d_zim:
-    src: zim
-    dst: ~/.zim
   d_vim:
     src: vim
     dst: ~/.vim
@@ -36,5 +33,4 @@ profiles:
     - d_termite
     - f_zshrc
     - f_zimrc
-    - d_zim
     - d_vim
