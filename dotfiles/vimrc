@@ -95,4 +95,4 @@ au BufNewFile,BufRead *.snake set syntax=snakemake
 
 " vimtex
 
-
+let g:netrw_dirhistmax = 0
