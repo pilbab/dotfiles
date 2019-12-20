@@ -15,10 +15,11 @@ source /usr/share/vim/vimfiles/gruvbox_256palette.sh
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export PATH=$PATH:/opt/pymol
+export PATH="${PATH}:${HOME}/.local/bin/"
 alias sus='i3lock && systemctl suspend'
 alias sm='snakemake'
 alias dotdrop='$HOME/.dotfiles/dotdrop.sh --cfg=$HOME/.dotfiles/config.yaml'
-alias ls='lsd'
+alias ls='exa'
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
