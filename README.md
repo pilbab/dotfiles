@@ -1,2 +1,2 @@
 # dotfiles
-Configuration files for my setup
+Configuration files for my setup.
